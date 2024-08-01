@@ -8,3 +8,4 @@ export const Footer = ()=>
         | Version 0.0.1 | Copyright- {currentYear}
     </small>
 
+
