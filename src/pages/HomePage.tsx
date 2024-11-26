@@ -37,7 +37,7 @@ export const HomePage =()=>{
     // };
 
     const handleAnswerSelection = (answer: string) => {
-        console.log("Answer  ====>", answer)
+
         if (answer === questions[currentQuestionIndex].correctAnswer) {
             setScore(score + 1);
         }
