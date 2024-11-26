@@ -1,0 +1,82 @@
+.container{
+    /*height: 15rem;*/
+    width: 40rem;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem ;
+}
+
+
+.answer-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border: 1px solid #3b5998; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: white; /* Background color */
+    color: #3b5998; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
+}
+
+.answer-button:hover {
+    background-color: rgba(59, 89, 152, 0.04); /* Background color on hover */
+    /*color: white; !* Text color on hover *!*/
+}
+
+.answer-button.correct {
+    background-color: green; /* Background color for correct answer */
+    color: white; /* Text color for correct answer */
+    border: 1px solid green; /* Maintain border when correct */
+}
+
+
+.answer-button.incorrect {
+    background-color: #d32828; /* Background color for incorrect answer */
+    color: white; /* Text color for incorrect answer */
+    border: 1px solid #d32828; /* Maintain border when incorrect */
+}
+
+.btn{
+
+}
+
+.btn--medium{
+    padding: 8px 20px;
+    font-size: 16px;
+    border:none;
+    border-radius: 5px;
+    background-color: #3b5998;
+    color: var(--color-white);
+}
+.btn--medium:hover{
+    background-color: rgba(74, 106, 169, 0.93);
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px){
+    .container{
+        height: 90%;
+        width: 100%;
+    }
+    h1{
+        font-size: var(--fs-5);
+    }
+
+    .answer-button{
+        padding: 5px 5px;
+    }
+
+}
+
+
+
+/*@media (width >= 75em) {*/
+
+/*}*/
