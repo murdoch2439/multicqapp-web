@@ -7,7 +7,7 @@ import {questions} from "../utils/questions";
 import {DIGINCO_WEBSITE_LINK} from "../constants/variables";
 
 import {Footer} from "../components/Footer";
-
+import {translations} from "../utils/translations";
 
 
 
@@ -18,6 +18,7 @@ export const HomePage =()=>{
     const [quizFinished, setQuizFinished] = useState(false);
     const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
     const [correctAnswer, setCorrectAnswer] = useState<string | null>(null);
+    const [language, setLanguage] = useState<'en' | 'fr'>('en')
 
     const totalQuestions = questions.length;
 
@@ -41,11 +42,11 @@ export const HomePage =()=>{
 
     const handleAnswerSelection = (answer: string) => {
 
-        if (answer === questions[currentQuestionIndex].correctAnswer) {
+        if (answer === translations[language].questions[currentQuestionIndex].correctAnswer) {
             setScore(score + 1);
         }
         setSelectedAnswer(answer);
-        setCorrectAnswer(questions[currentQuestionIndex].correctAnswer);
+        setCorrectAnswer(translations[language].questions[currentQuestionIndex].correctAnswer);
 
         // Move to the next question after a brief delay
         setTimeout(() => {
@@ -59,6 +60,12 @@ export const HomePage =()=>{
             }
         }, 1000); // Change question after 1 second
     };
+    const currentQuestion = translations[language].questions[currentQuestionIndex];
+
+
+    const languageHandler =(language:any)=>{
+        setLanguage(language)
+    }
 
     // const handleNextQuestion = () => {
     //     if (selectedAnswer === questions[currentQuestionIndex].correctAnswer) {
@@ -89,39 +96,50 @@ export const HomePage =()=>{
 
     return (
         <div className={"wrapper"}>
-            {/*<div className={"header"}>*/}
+            <div className={"header"}>
+                <h4 className={"app-name"}>MULTIC-QAPP</h4>
 
-            {/*</div>*/}
+                <select
+                    id="language-select"
+                    value={language}
+                    onChange={(e) => setLanguage(e.target.value as 'en' | 'fr')}
+                >
+                    <option value="en">English</option>
+                    {/*<option value="fr">French</option>*/}
+                </select>
+
+
+            </div>
             <div className={"container"}>
                 <div>
-
                     <ProgressBar progressPercentage={progressPercentage}/>
                     <h1>Test your level in TI!</h1>
-                    {/*<p>What is the name of the computer created in 1985?</p>*/}
-                    {/*<Choice/>*/}
-                    {/*<Choice/>*/}
+
+                    {/*<h1>{console.log("ha")}</h1>*/}
+
                     {/*<Choice/>*/}
 
-                    {/*<p style={{textAlign: 'center'}}>{`Question ${currentQuestionIndex + 1} of ${totalQuestions}`}</p>*/}
                     {!quizFinished &&
-                        <p style={{textAlign: 'center'}}>{`Question ${currentQuestionIndex + 1} of ${totalQuestions}`}</p>}
+                        <p style={{textAlign: 'center', fontSize:12}}>{`Question ${currentQuestionIndex + 1} of ${totalQuestions}`}</p>}
 
 
                     {quizFinished ? (
-                        <div>
-                            <p>Your
-                                score: {score} / {questions.length} ({Math.round((score / questions.length) * 100)}%)</p>
+                        <div className={"quiz-result"}>
+                            <p>
+                                Your score: {score} / {questions.length} ({Math.round((score / questions.length) * 100)}%)
+                            </p>
                             <p>{finalResultMessage(score, questions.length)}</p>
-                            {/*<p>🎉 Congratulations! You're a computer expert!</p>*/}
 
                             <button className={"btn--medium"} onClick={handleRestartQuiz}>Restart Quiz</button>
                         </div>
                     ) : (
                         <div>
-                            <p>{questions[currentQuestionIndex].question}</p>
+                            {/*<p>{questions[currentQuestionIndex].question}</p>*/}
+                            <p>{currentQuestion.question}</p>
                             <div>
-                                {
-                                    questions[currentQuestionIndex].answers.map((answer, index) => {
+                            {
+                                    // questions[currentQuestionIndex].answers.map((answer, index) => {
+                                    currentQuestion.answers.map((answer, index) => {
                                         let buttonClass = 'answer-button';
                                         // Determine the button's class based on selection and correctness
                                         if (selectedAnswer === answer) {
@@ -143,23 +161,14 @@ export const HomePage =()=>{
                                                     handleAnswerSelection(answer)
                                                 }
                                             >
-                                                {/*<label>*/}
-                                                {/*    <input*/}
-                                                {/*        type="radio"*/}
-                                                {/*        value={answer}*/}
-                                                {/*        checked={selectedAnswer === answer}*/}
-                                                {/*        onChange={() => handleAnswerSelection(answer)}*/}
-                                                {/*    />*/}
                                                 {answer}
-                                                {/*</label>*/}
+
                                             </div>
                                         )
                                     })
                                 }
                             </div>
-                            {/*<button onClick={handleNextQuestion} disabled={!selectedAnswer}>*/}
-                            {/*    Next Question*/}
-                            {/*</button>*/}
+
                         </div>
                     )}
                 </div>
