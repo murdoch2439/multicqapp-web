@@ -5,7 +5,6 @@
     /*justify-content: space-between;*/
     /*height: 100vh;*/
     gap:35px;
-    /*background-color: #1f1f33;*/
 
 }
 
@@ -30,6 +29,10 @@
     padding: 1.5rem ;
 }
 
+h1{
+    text-align: center;
+}
+
 
 .answer-button {
     display: flex;
@@ -48,7 +51,6 @@
 
 .answer-button:hover {
     background-color: rgba(59, 89, 152, 0.04); /* Background color on hover */
-    /*color: white; !* Text color on hover *!*/
 }
 
 .answer-button.correct {
