@@ -1,0 +1,38 @@
+.progressbar-container{
+    height: 0.4rem;
+    width: 30rem;
+    background-color: var(--color-primary-variant);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.progressbar-step{
+
+    height: 0.4rem;
+    /*width: 28rem;*/
+    background-color: var(--color-success);
+    border-radius: 1rem;
+    transition: width 0.3s
+
+}
+
+.progressbar-step-less-than-hundred{
+
+    height: 0.4rem;
+    /*width: 28rem;*/
+    background-color: var(--color-success);
+    border-radius: 1rem 0 0 1rem;
+    transition: width 0.3s
+
+}
+
+
+@media screen and (max-width:600px){
+    .progressbar-container{
+        width:100%;
+    }
+
+    h1{
+        font-size: var(--fs-5);
+    }
+}
