@@ -1,0 +1,17 @@
+.choice-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    height: 2rem;
+    width: 100%;
+    border: 1px solid gray;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    background-color: rgba(181, 181, 182, 0.15);
+    /*border-color:rgba(181, 181, 182, 0.15); ;*/
+}
