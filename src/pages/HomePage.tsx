@@ -4,6 +4,9 @@ import {Choice} from "../components/Choice";
 import {useState} from "react";
 import {finalResultMessage} from "../utils/finalResultMessage";
 import {questions} from "../utils/questions";
+import {DIGINCO_WEBSITE_LINK} from "../constants/variables";
+import {currentYear} from "../utils/currentYear";
+import {Footer} from "../components/Footer";
 
 
 
@@ -41,7 +44,6 @@ export const HomePage =()=>{
         if (answer === questions[currentQuestionIndex].correctAnswer) {
             setScore(score + 1);
         }
-
         setSelectedAnswer(answer);
         setCorrectAnswer(questions[currentQuestionIndex].correctAnswer);
 
@@ -79,15 +81,17 @@ export const HomePage =()=>{
     };
 
     // const progressPercentage = ((currentQuestionIndex + 1) / totalQuestions) * 100;
-    // const progressPercentage = (currentQuestionIndex / totalQuestions) * 100;
+
     const progressPercentage = quizFinished
         ? 100
         : (currentQuestionIndex / totalQuestions) * 100;
 
 
-    return(
+    return (
         <div className={"wrapper"}>
-            <div></div>
+            {/*<div className={"header"}>*/}
+
+            {/*</div>*/}
             <div className={"container"}>
                 <div>
 
@@ -163,9 +167,12 @@ export const HomePage =()=>{
 
             </div>
 
-            <div></div>
+            <div className={"footer"}>
+               <Footer />
+
+            </div>
 
         </div>
 
-    )
+    );
 }
