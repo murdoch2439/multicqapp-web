@@ -1,6 +1,6 @@
 .progressbar-container{
     height: 0.4rem;
-    width: 30rem;
+    width: 100%;
     background-color: var(--color-primary-variant);
     border-radius: 1rem;
     overflow: hidden;
