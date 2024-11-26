@@ -9,13 +9,22 @@
 }
 
 .header{
-    background-color: transparent;
+    background-color: var(--color-white);
+    position: absolute;
+    top:0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border-radius: 0 0 5px 5px;
-    width: 100%;
+    width: 50%;
     height: 2rem;
+    /*gap:20px;*/
+    padding:0 4rem
+}
+
+.app-name{
+    color: #3b5998;
+
 }
 
 .container{
@@ -31,6 +40,12 @@
 
 h1{
     text-align: center;
+}
+
+.quiz-result{
+    text-align: center;
+
+
 }
 
 
