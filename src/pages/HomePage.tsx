@@ -108,19 +108,17 @@ export const HomePage =()=>{
                     {/*<option value="fr">French</option>*/}
                 </select>
 
-
             </div>
             <div className={"container"}>
                 <div>
                     <ProgressBar progressPercentage={progressPercentage}/>
                     <h1>Test your level in TI!</h1>
 
-                    {/*<h1>{console.log("ha")}</h1>*/}
-
-                    {/*<Choice/>*/}
 
                     {!quizFinished &&
-                        <p style={{textAlign: 'center', fontSize:12}}>{`Question ${currentQuestionIndex + 1} of ${totalQuestions}`}</p>}
+                        <p style={{textAlign: 'center', fontSize:12}}>
+                            {`Question ${currentQuestionIndex + 1} of ${totalQuestions}`}
+                        </p>}
 
 
                     {quizFinished ? (
@@ -128,7 +126,9 @@ export const HomePage =()=>{
                             <p>
                                 Your score: {score} / {questions.length} ({Math.round((score / questions.length) * 100)}%)
                             </p>
-                            <p>{finalResultMessage(score, questions.length)}</p>
+                            <p>
+                                {finalResultMessage(score, questions.length)}
+                            </p>
 
                             <button className={"btn--medium"} onClick={handleRestartQuiz}>Restart Quiz</button>
                         </div>
