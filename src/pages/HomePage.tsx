@@ -5,7 +5,7 @@ import {useState} from "react";
 import {finalResultMessage} from "../utils/finalResultMessage";
 import {questions} from "../utils/questions";
 import {DIGINCO_WEBSITE_LINK} from "../constants/variables";
-import {currentYear} from "../utils/currentYear";
+
 import {Footer} from "../components/Footer";
 
 
