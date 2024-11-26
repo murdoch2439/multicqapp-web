@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+:root{
+  --color-bg:#1f1f33;
+  --color-bg-variant:#2c2c6c;
+  --color-primary: #0C4A6E;
+  /*--color-primary: #178992;*/
+  --color-secondary:#1699A0;
+  /*--color-primary: #1676b3;*/
+  --color-success: #58c758;
+  --color-primary-variant:rgba(77,181,255, 0.4);
+  --color-white:#fff;
+  --color-light:rgba(255,255,255, 0.6);
+  --color-yellow:#FFCD42;
+  --transition: all 400ms ease;
+  --container-width-lg:75%;
+  --container-width-md:86%;
+  --container-width-sm:90%;
+  --container-padding-lg: 0 7rem;
+  --container-padding-md: 0 4rem;
+  --container-padding-sm: 0 2rem;
+  --fs-1:3.5rem;
+  --fs-2:2.5rem;
+  --fs-3:2rem;
+  --fs-4:1.5rem;
+  --fs-5:1.125rem;
+  --fs-6:1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
 }
+
+
+
+
+body{
+  height: 90vh;
+  background-color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: poppins, serif;
+
+}
+
