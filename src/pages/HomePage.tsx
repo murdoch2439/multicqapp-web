@@ -177,7 +177,6 @@ export const HomePage =()=>{
 
             <div className={"footer"}>
                <Footer />
-
             </div>
 
         </div>
