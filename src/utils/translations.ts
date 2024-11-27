@@ -1,4 +1,4 @@
-// src/translations.ts
+
 export const translations = {
     en: {
         questions: [
