@@ -6,7 +6,6 @@
   --color-bg:#1f1f33;
   --color-bg-variant:#2c2c6c;
   --color-primary: #0C4A6E;
-  /*--color-primary: #178992;*/
   --color-secondary:#1699A0;
   /*--color-primary: #1676b3;*/
   --color-success: #58c758;
@@ -43,12 +42,13 @@ body{
   align-items: center;
   justify-content: center;
   font-family: poppins, serif;
-
 }
+
 
 a{
   text-decoration: none;
 }
+
 
 small{
   font-size: 8px;
