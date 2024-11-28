@@ -1,9 +1,11 @@
 import "./progressBar.style.css"
 import {FC} from "react";
+
 type props ={
     progressPercentage:number,
     quizFinished?:boolean
 }
+
 export const ProgressBar:FC<props> =({progressPercentage})=>{
     return(
         <div className={"progressbar-container"}>
