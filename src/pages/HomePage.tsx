@@ -161,6 +161,7 @@ export const HomePage =()=>{
                                                     handleAnswerSelection(answer)
                                                 }
                                             >
+
                                                 {answer}
 
                                             </div>
