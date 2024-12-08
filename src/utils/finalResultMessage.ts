@@ -14,5 +14,4 @@ export const finalResultMessage=(score:number, totalQuestions:number)=>{
     else{
         return `🎉 Congratulations! You're a computer expert!`
     }
-
 }
