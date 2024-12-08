@@ -120,7 +120,6 @@ export const HomePage =()=>{
                             {`Question ${currentQuestionIndex + 1} of ${totalQuestions}`}
                         </p>}
 
-
                     {quizFinished ? (
                         <div className={"quiz-result"}>
                             <p>
