@@ -115,7 +115,6 @@ export const HomePage =()=>{
                     <h1>Test your level in TI!</h1>
 
 
-
                     {!quizFinished &&
                         <p style={{textAlign: 'center', fontSize:12}}>
                             {`Question ${currentQuestionIndex + 1} of ${totalQuestions}`}
