@@ -117,6 +117,7 @@ export const HomePage =()=>{
 
 
 
+
                     {!quizFinished &&
                         <p style={{textAlign: 'center', fontSize:12}}>
                             {`Question ${currentQuestionIndex + 1} of ${totalQuestions}`}
