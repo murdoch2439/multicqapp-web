@@ -2,6 +2,7 @@ import {DIGINCO_WEBSITE_LINK} from "../constants/variables";
 import {currentYear} from "../utils/currentYear";
 
 
+
 export const Footer = ()=>
     <small>
         Powered by
