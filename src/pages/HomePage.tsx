@@ -94,6 +94,7 @@ export const HomePage =()=>{
         : (currentQuestionIndex / totalQuestions) * 100;
 
 
+
     return (
         <div className={"wrapper"}>
             <div className={"header"}>
