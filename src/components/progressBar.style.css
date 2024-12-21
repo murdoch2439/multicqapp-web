@@ -7,14 +7,12 @@
 }
 
 
-
 .progressbar-step{
     height: 0.4rem;
     /*width: 28rem;*/
     background-color: var(--color-success);
     border-radius: 1rem;
     transition: width 0.3s
-
 }
 
 .progressbar-step-less-than-hundred{
