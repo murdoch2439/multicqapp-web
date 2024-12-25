@@ -87,7 +87,6 @@ export const HomePage =()=>{
         setSelectedAnswer(null);
     };
 
-    // const progressPercentage = ((currentQuestionIndex + 1) / totalQuestions) * 100;
 
     const progressPercentage = quizFinished
         ? 100
