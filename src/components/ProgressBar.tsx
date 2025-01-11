@@ -1,5 +1,5 @@
 import "./progressBar.style.css"
-import {FC} from "react";
+import {FC} from "react"
 
 type props ={
     progressPercentage:number,
@@ -8,7 +8,7 @@ type props ={
 
 
 
-export const ProgressBar:FC<props> =({progressPercentage})=>{
+export const ProgressBar:FC<props> = ({progressPercentage}) => {
     return(
         <div className={"progressbar-container"}>
             <div className={progressPercentage < 100 ? "progressbar-step-less-than-hundred" : "progressbar-step"} style={{
