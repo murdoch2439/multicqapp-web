@@ -10,9 +10,3 @@ export const Footer = ()=>
     </small>
 
 
-
-
-
-
-
-
