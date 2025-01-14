@@ -13,14 +13,3 @@ export const  Choice = ()=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
