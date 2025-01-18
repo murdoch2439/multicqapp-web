@@ -63,7 +63,6 @@ export const HomePage =()=>{
     const currentQuestion = translations[language].questions[currentQuestionIndex];
 
 
-
     const languageHandler =(language:any)=>{
         setLanguage(language)
     }
