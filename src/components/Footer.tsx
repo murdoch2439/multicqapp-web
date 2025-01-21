@@ -5,6 +5,7 @@ import {currentYear} from "../utils/currentYear";
 
 
 
+
 export const Footer = ()=>
     <small>
         Powered by
