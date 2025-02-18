@@ -31,11 +31,3 @@ export const  Choice = ()=>{
 
 
 
-
-
-
-
-
-
-
-
