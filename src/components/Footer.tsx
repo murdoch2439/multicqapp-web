@@ -10,4 +10,3 @@ export const Footer = ()=>
         <a href={DIGINCO_WEBSITE_LINK} target={"__blank"}> Diginco </a>
         | Version 0.0.1 | Copyright- {currentYear}
     </small>
-
