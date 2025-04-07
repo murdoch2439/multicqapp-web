@@ -100,7 +100,6 @@ export const HomePage =()=>{
             <div className={"header"}>
                 <h4 className={"app-name"}>MULTIC-QAPP</h4>
 
-
                 <select
                     id="language-select"
                     value={language}
@@ -117,10 +116,7 @@ export const HomePage =()=>{
                     <ProgressBar progressPercentage={progressPercentage}/>
                     <h1>Test your level in TI!</h1>
 
-
-
-
-
+                    
                     {!quizFinished &&
                         <p style={{textAlign: 'center', fontSize:12}}>
                             {`Question ${currentQuestionIndex + 1} of ${totalQuestions}`}
