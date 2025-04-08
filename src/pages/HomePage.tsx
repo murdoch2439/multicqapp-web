@@ -95,6 +95,7 @@ export const HomePage =()=>{
         : (currentQuestionIndex / totalQuestions) * 100;
 
 
+
     return (
         <div className={"wrapper"}>
             <div className={"header"}>
@@ -116,7 +117,7 @@ export const HomePage =()=>{
                     <ProgressBar progressPercentage={progressPercentage}/>
                     <h1>Test your level in TI!</h1>
 
-                    
+
                     {!quizFinished &&
                         <p style={{textAlign: 'center', fontSize:12}}>
                             {`Question ${currentQuestionIndex + 1} of ${totalQuestions}`}
