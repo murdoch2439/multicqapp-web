@@ -82,6 +82,7 @@ export const HomePage =()=>{
 
 
 
+
     const handleRestartQuiz = () => {
         setCurrentQuestionIndex(0);
         setScore(0);
