@@ -1,12 +1,10 @@
 import "./progressBar.style.css"
 import {FC} from "react"
 
-
 type props ={
     progressPercentage:number,
     quizFinished?:boolean
 }
-
 
 
 
