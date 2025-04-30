@@ -72,9 +72,3 @@ export const Footer = ()=>
 
 
 
-
-
-
-
-
-
