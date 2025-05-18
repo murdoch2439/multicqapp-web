@@ -16,6 +16,7 @@
 
 
 
+
 .progressbar-step{
     height: 0.4rem;
     /*width: 28rem;*/
@@ -34,6 +35,8 @@
     transition: width 0.3s
 
 }
+
+
 
 
 
