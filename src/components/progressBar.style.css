@@ -6,7 +6,6 @@
     overflow: hidden;
 }
 
-
 .progressbar-step{
     height: 0.4rem;
     /*width: 28rem;*/
@@ -14,12 +13,6 @@
     border-radius: 1rem;
     transition: width 0.3s
 }
-
-
-
-
-
-
 
 .progressbar-step-less-than-hundred{
 
@@ -30,16 +23,6 @@
     transition: width 0.3s
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
