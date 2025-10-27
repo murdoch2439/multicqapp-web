@@ -165,10 +165,3 @@ export const Footer = ()=>
 
 
 
-
-
-
-
-
-
-
