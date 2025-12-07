@@ -181,10 +181,3 @@ export const  Choice = ()=>{
 
 
 
-
-
-
-
-
-
-
