@@ -18,4 +18,3 @@ export const ProgressBar:FC<props> = ({progressPercentage}) => {
     )
 }
 
-
