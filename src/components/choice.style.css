@@ -10,6 +10,8 @@
     border-radius: 0.5rem;
 }
 
+
+
 .choice-container:hover{
     cursor: pointer;
     background-color: rgba(181, 181, 182, 0.15);
