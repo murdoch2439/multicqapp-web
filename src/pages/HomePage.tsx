@@ -91,6 +91,8 @@ export const HomePage =()=>{
     };
 
 
+
+
     const progressPercentage = quizFinished
         ? 100
         : (currentQuestionIndex / totalQuestions) * 100;
