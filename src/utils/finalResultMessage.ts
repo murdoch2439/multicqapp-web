@@ -16,6 +16,3 @@ export const finalResultMessage=(score:number, totalQuestions:number)=>{
     }
 }
 
-
-
-
