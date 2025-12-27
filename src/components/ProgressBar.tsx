@@ -6,7 +6,6 @@ type props ={
     quizFinished?:boolean
 }
 
-
 export const ProgressBar:FC<props> = ({progressPercentage}) => {
     return(
         <div className={"progressbar-container"}>
